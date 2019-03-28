@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carros</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <select id="marca" class="inputSelect" onchange="modelos()">
+        <option disabled selected>Marca</option>
+        <option>Kia</option>
+        <option>Nissan</option>
+        <option>Hyundai</option>
+        <option>Mazda</option>
+        <option>Chevrolet</option>
+    </select>
+
+    <select id="tipo" class="inputSelect"  onchange="modelos()">
+        <option disabled selected>Tipo de vehículo</option>
+        <option id="sedan">Sedán</option>
+        <option id="hatchback">Hatchback</option>
+        <option id="suv">SUV</option>
+        <option id="coupe">Coupé</option>
+        <option id="crossover">Crossover</option>
+    </select>
+
+    <select id="modelo" class="inputSelect">
+        <option disabled selected>Modelo</option>
+    </select>
+
+    <input type="text" id="anio" placeholder="Año" class="inputText" maxlength="4" size="4"/>
+
+    <select id="color" class="inputSelect">
+        <option disabled selected>Color</option>
+        <option id="rojo">Rojo</option>
+        <option id="blanco">Blanco</option>
+        <option id="azul">Azul</option>
+        <option id="negro">Negro</option>
+        <option id="gris">Gris</option>
+        <option id="plata">Plata</option>
+    </select>
+    
+    <input type="text" id="matricula" placeholder="Ingresa la matrícula" class="inputText" maxlength="7" style="text-transform:uppercase"/>
+   
+    <input type="text" id="llantas" class="inputText" maxlength="1" readonly value="4 llantas"/>
+
+    <input type="text" id="puertas" placeholder="# de puertas" class="inputText" maxlength="1" readonly/>
+
+    <select id="version" class="inputSelect">
+        <option disabled selected>Versión</option>
+        <option id="basica">Básica</option>
+        <option id="equipada">Equipada</option>
+        <option id="lujo">Lujo</option>
+    </select>
+
+    <input type="text" id="precio" placeholder="Precio $MXN" class="inputText" readonly/>
+
+    <input type="text" id="impuesto" placeholder="Impuesto" class="inputText" readonly/>
+
+    <select id="transmision" class="inputSelect">
+        <option disabled selected>Transmisión</option>
+        <option id="standard">Standard</option>
+        <option id="automatica">Automática</option>
+    </select>
+
+    <input type="button" id="btn" value="Comprar" class="btnComprar"/>
+
+    <div id="carro" display="none">
+
+    </div>
+
+</body>
+
+</html>
